@@ -7,16 +7,18 @@
 
 import UIKit
 
-struct OrderListViewModel {
+class OrderListViewModel {
     
     var ordersViewModel: [OrderViewModel]
+    
     init() {
         self.ordersViewModel = [OrderViewModel]()
     }
 }
 
 extension OrderListViewModel {
-    func orderViewModel(at index: Int) -> OrderViewModel {
-        return self.orderViewModel(at: index)
+    
+    func orderViewModel(_ indexPath: Int) -> OrderViewModel {
+        return self.ordersViewModel[indexPath]
     }
 }

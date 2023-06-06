@@ -19,6 +19,7 @@
 		8CF1352C2A2F27FA007878F6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1352B2A2F27FA007878F6 /* Order.swift */; };
 		8CF135302A2F2C15007878F6 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1352F2A2F2C15007878F6 /* OrderViewModel.swift */; };
 		8CF135322A2F2D11007878F6 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF135312A2F2D11007878F6 /* OrderListViewModel.swift */; };
+		8CF135342A2F369D007878F6 /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF135332A2F369D007878F6 /* AddCoffeeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8CF1352B2A2F27FA007878F6 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		8CF1352F2A2F2C15007878F6 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		8CF135312A2F2D11007878F6 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		8CF135332A2F369D007878F6 /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				8CF1352F2A2F2C15007878F6 /* OrderViewModel.swift */,
 				8CF135312A2F2D11007878F6 /* OrderListViewModel.swift */,
+				8CF135332A2F369D007878F6 /* AddCoffeeOrderViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				8CF135122A2F1CC2007878F6 /* SceneDelegate.swift in Sources */,
 				8CF1352C2A2F27FA007878F6 /* Order.swift in Sources */,
 				8CF135302A2F2C15007878F6 /* OrderViewModel.swift in Sources */,
+				8CF135342A2F369D007878F6 /* AddCoffeeOrderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
