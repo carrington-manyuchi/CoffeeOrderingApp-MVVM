@@ -13,6 +13,8 @@
 		8CF135172A2F1CC2007878F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF135152A2F1CC2007878F6 /* Main.storyboard */; };
 		8CF135192A2F1CC3007878F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF135182A2F1CC3007878F6 /* Assets.xcassets */; };
 		8CF1351C2A2F1CC3007878F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1351A2A2F1CC3007878F6 /* LaunchScreen.storyboard */; };
+		8CF135252A2F2048007878F6 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF135242A2F2048007878F6 /* OrdersTableViewController.swift */; };
+		8CF135272A2F2088007878F6 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF135262A2F2088007878F6 /* AddOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8CF135182A2F1CC3007878F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF1351B2A2F1CC3007878F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF1351D2A2F1CC3007878F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF135242A2F2048007878F6 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		8CF135262A2F2088007878F6 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		8CF1350E2A2F1CC2007878F6 /* CoffeeOrderingApp-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				8CF135232A2F1F87007878F6 /* Controllers */,
 				8CF1350F2A2F1CC2007878F6 /* AppDelegate.swift */,
 				8CF135112A2F1CC2007878F6 /* SceneDelegate.swift */,
 				8CF135132A2F1CC2007878F6 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				8CF1351D2A2F1CC3007878F6 /* Info.plist */,
 			);
 			path = "CoffeeOrderingApp-MVVM";
+			sourceTree = "<group>";
+		};
+		8CF135232A2F1F87007878F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CF135242A2F2048007878F6 /* OrdersTableViewController.swift */,
+				8CF135262A2F2088007878F6 /* AddOrderViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF135252A2F2048007878F6 /* OrdersTableViewController.swift in Sources */,
 				8CF135142A2F1CC2007878F6 /* ViewController.swift in Sources */,
+				8CF135272A2F2088007878F6 /* AddOrderViewController.swift in Sources */,
 				8CF135102A2F1CC2007878F6 /* AppDelegate.swift in Sources */,
 				8CF135122A2F1CC2007878F6 /* SceneDelegate.swift in Sources */,
 			);
