@@ -9,5 +9,17 @@ import UIKit
 
 
 class OrdersTableViewController: UITableViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        populateOrders()
+    }
     
+    
+    
+    func populateOrders() {
+        guard let coffeeURL = URL(string: "https://warp-wiry-rugby.glitch.me/orders") else {
+            fatalError("URL was incorrect")
+            return
+        }
+    }
 }
