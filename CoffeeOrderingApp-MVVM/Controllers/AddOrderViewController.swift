@@ -6,7 +6,15 @@
 
 import UIKit
 
+
+protocol AddCoffeeDelegate {
+    func addCoffeeOrderViewControllerDidSave(order: Order, controller: UIViewController)
+    func addCoffeeOrderViewControllerDidClose(controller: UIViewController)
+}
+
 class AddOrderViewController: UIViewController {
+    
+    var delegate: AddCoffeeDelegate?
     
     private var vm = AddCoffeeOrderViewModel()
     private var coffeeSizesSegmentControl: UISegmentedControl!
@@ -30,6 +38,13 @@ class AddOrderViewController: UIViewController {
     }
     
     
+    @IBAction func close() {
+        if let delegate = self.delegate {
+            delegate.addCoffeeOrderViewControllerDidClose(controller: self)
+        }
+    }
+    
+    
     @IBAction func save() {
         let name = self.nameTextField.text
         let email = self.emailTextField.text
@@ -48,7 +63,12 @@ class AddOrderViewController: UIViewController {
         Webservice().load(resource: Order.create(vm: self.vm)) { result in
             switch result {
             case .success(let order):
-                print(order)
+                
+                if let order = order, let delegate = self.delegate {
+                    DispatchQueue.main.async {
+                        delegate.addCoffeeOrderViewControllerDidSave(order: order, controller: self)
+                    }
+                }
             case .failure(let error):
                 print(error)
             }
